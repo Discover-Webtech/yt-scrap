@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>temp_app</title>
+</head>
+
+<style>
+</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+<div class="jumbotron">
+  <form method="post">
+    <div class="form-group">
+      <h1>Products Scraper</h1><br>
+      <h4>Flipcart url for flipcart</h4>
+      <h4>Youtube Scraper</h4>
+      <h4>Amazon url for amazon</h4>
+      <select class="form-select" aria-label="Default select example" name="website">
+        <option selected>Open this select menu</option>
+        <option value="amazon">Amazon</option>
+        <option value="flipkart">Flipkart</option>
+        <option value="youtube">YouTube</option>
+      </select>
+      <input class="form-control" type="text" name="url" placeholder="Enter comma ',' seperated URLs/Video ID">
+      <label for="auth_key">Auth-key(if required)</label>
+      <input type="password" id="auth_key" name="auth_key">
+    </div>
+    <button type="submit" class="btn btn-primary" formaction="/">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
