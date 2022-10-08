@@ -5,6 +5,10 @@
 </head>
 
 <style>
+  p{
+    margin-bottom: 5px !important;
+    
+  }
 </style>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,19 +16,21 @@
 <div class="jumbotron">
   <form method="post">
     <div class="form-group">
-      <h1>Products Scraper</h1><br>
-      <h4>Flipcart url for flipcart</h4>
-      <h4>Youtube Scraper</h4>
-      <h4>Amazon url for amazon</h4>
+      <h2 style="color:red;">Products Scraper</h2>
+      <!-- <h1>Products Scraper</h1><br> -->
+      <p>A Powerfull Scraper makes you Scrap from Amazon, Flipkart and Youtube Comments.</p>
+      <!-- <p>Amazon url for amazon</p>
+      <p>YouTube Comment Scrapper</p> -->
       <select class="form-select" aria-label="Default select example" name="website">
         <option selected>Open this select menu</option>
         <option value="amazon">Amazon</option>
         <option value="flipkart">Flipkart</option>
-        <option value="youtube">YouTube</option>
+        <option value="youtube">YouTube Scraper</option>
       </select>
-      <input class="form-control" type="text" name="url" placeholder="Enter comma ',' seperated URLs/Video ID">
-      <label for="auth_key">Auth-key(if required)</label>
-      <input type="password" id="auth_key" name="auth_key">
+      <input style="margin-top: 15px;" class="form-control" type="text" name="url" placeholder="Enter comma ',' seperated URLs/Video ID">
+      
+      <label style="margin-top: 15px;" for="auth_key">Auth-key</label>
+      <input type="password" id="auth_key" name="auth_key" placeholder="YouTube Api Key">
     </div>
     <button type="submit" class="btn btn-primary" formaction="/">Submit</button>
   </form>
